@@ -1,0 +1,31 @@
+<p>Hello StudenTask Admin,</p>
+
+<p>bravo, we have a new user (role: <%- user.roles[0] %>) on the platform.</p>
+
+<h2>User details</h2>
+<p>
+    ID: <%- user._id %><br>
+    <%- user.profile.firstName %> <%- user.profile.lastName %><br>
+    <%- user.emails[0].address %>
+</p>
+
+<h2>UTM</h2>
+
+<p>
+    Source: <%- user.utm.source %><br />
+    Medium: <%- user.utm.medium %><br />
+</p>
+
+<h2>Roles</h2>
+<p>
+    <%- user.roles[0] %>
+</p>
+
+<p>
+    To know more, visit the url: <br>
+    <a href="https://studentask.de/app/profile/<%- user._id %>">Website link</a>
+    <br>
+    or
+    <br>
+    <a href="https://api.studentask.de/api/user/<%- user._id %>">API Link</a>
+</p>

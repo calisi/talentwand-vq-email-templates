@@ -1,0 +1,21 @@
+<p>Hallo <%- taskOwner.profile.firstName %>,</p>
+<p>du hast eine neue Anfrage von <%- applicant.profile.firstName %> für dein Inserat mit dem Titel "<%- task.title %>" erhalten.</p>
+<p><%- applicant.profile.firstName %>'s Kontaktdaten:</p>
+<span><%- applicant.profile.firstName %> <%- applicant.profile.lastName %></span><br>
+<span><%- applicant.emails[0].address %></span><br>
+<% if (applicant.mobile.number) { %>
+    <span>+<%- applicant.mobile.code %> <%- applicant.mobile.number %></span><br>
+<% } %>
+<p><span><b>Persönliche Nachricht:</b></span></p>
+<p>
+    <em>
+    <% if (application.message) { %>
+        <%- application.message %>
+    <% } else { %>
+    <em>Keine Nachricht</em>
+    <% } %>
+    </em>
+</p>
+<p>
+Jetzt kannst du direkt per Telefon oder E-Mail Kontakt zum Bewerber aufnehmen.
+</p>

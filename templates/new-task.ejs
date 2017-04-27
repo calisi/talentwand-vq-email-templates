@@ -1,0 +1,28 @@
+<p>Servus!</p>
+
+<p>
+    Es gibt ein neues Inserat "<%- task.title %>" (<%- (task.price / 100).toFixed(0) %>€<% if (task.priceType==1) { %>/h)<% } else { %>/Auftrag)<% } %>, das dich interessieren könnte.
+</p>
+<p>
+   Du kannst dich jetzt unter diesem Link bewerben:
+</p>
+</p>
+    <a href="https://studentask.de/app/task/<%- task._id %>?utm_source=new_task_email_notif&utm_medium=email">
+        https://studentask.de/app/task/<%- task._id %>
+    <a>
+</p>
+<p>
+    Hast du schon unsere StudenTask App? Hol dir die App und werde Teil der schnell wachsenden Tasker-Community:
+    <ul>
+        <li>
+            <a href="https://geo.itunes.apple.com/de/app/studentask/id1084813293?mt=8">
+                Für iOS herunterladen
+            <a>
+        </li>
+        <li>
+            <a href="https://play.google.com/store/apps/details?id=de.viciqloud.studentask">
+                Für Android herunterladen
+            <a>
+        </li>
+    </ul>
+</p>
